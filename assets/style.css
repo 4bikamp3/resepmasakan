@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --black: #161212;
+  --soft: #5B5757;
+  --main: #DA2535;
+}
+
+body {
+  font-family: 'Poppins';
+  color: var(--black);
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-btn {
+  background: var(--main);
+  color: #FFF;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.section-title h2 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+/* Navbar */
+nav {
+  padding: 20px 0;
+}
+
+nav .navbar-brand h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+nav .navbar-menu a {
+  color: var(--black);
+  font-weight: 600;
+  margin: 0 10px;
+}
+
+/* Header */
+
+header {
+  margin: 75px 0;
+}
+
+.header-text h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  line-height: 1.5em;
+}
+
+.header-text p {
+  color: var(--soft) !important;
+  margin-bottom: 20px;
+}
+
+/* Recipe */
+
+#recipe {
+  margin: 150px 0;
+}
+
+.recipe-item .title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.recipe-item .description {
+  font-size: 15px;
+  color: var(--soft);
+  line-height: 1.7em;
+}
