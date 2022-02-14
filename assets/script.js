@@ -23,7 +23,7 @@ function showCard(r) {
                 <img class="img-fluid w-100" src="${r.thumb}" alt="">
               </div>
               <div class="text">
-                <p class="title">${name}</p>
+                <p class="title"><a href="detail.html?${r.key}">${name}<a/></p>
                 <p class="description">${r.title}....</p>
               </div>
             </div>
