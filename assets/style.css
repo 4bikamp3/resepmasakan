@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;600;700&display=swap');
 
 :root {
   --black: #161212;
@@ -17,6 +17,10 @@ body {
 a {
   text-decoration: none;
   color: var(--black);
+}
+
+a:hover {
+  color: var(--black)
 }
 
 .main-btn {
@@ -136,16 +140,36 @@ header {
   margin: 150px 0;
 }
 
+.recipe-item .img {
+  overflow: hidden;
+}
+
+.recipe-item .img img {
+  transition: .3s;
+}
+
+.recipe-item .img:hover img {
+  transform: scale(1.05);
+}
+
 .recipe-item .title {
   font-weight: 700;
   font-size: 18px;
   margin-top: 20px;
+  text-transform: capitalize;
 }
 
 .recipe-item .description {
   font-size: 15px;
   color: var(--soft);
   line-height: 1.7em;
+}
+
+/* footer */
+footer {
+  background: var(--soft2);
+  padding: 10px 0;
+  margin-top: 50px;
 }
 
 /* Recipe Detail */
@@ -214,6 +238,10 @@ header {
 /* RESPONSIVE */
 
 @media (max-width: 767.98px) {
+  header .container .row {
+    flex-direction: column-reverse;
+  }
+
   .header-text {
     text-align: center;
   }

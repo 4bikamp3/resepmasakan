@@ -23,7 +23,10 @@ function fetchRecipe(url) {
       insertToList(data)
       loader.style.display = "none"
     })
-    .catch(err => alert('Error :' + err))
+    .catch(function(err) {
+      alert(err)
+      loader.style.display = "none"
+    })
     
 }
 
